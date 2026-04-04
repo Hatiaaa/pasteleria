@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies by Jackie | Repostería Fina</title>
+    <meta name="description" content="Descubre las mejores galletas, tartas y repostería fina en Cookies by Jackie. Postres dulces, confortables y de alta calidad hechos con amor.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <header id="header" class="glass-nav">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-cookies">COOKIES</span>
+                <span class="logo-by">by Jackie</span>
+            </a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Tienda</a></li>
+                    <li><a href="#como-ordenar">Cómo Ordenar</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="cart-open-btn" class="btn-icon header-cart-btn" aria-label="Abrir carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="cart-badge" class="cart-badge">0</span>
+                </button>
+                <a href="#productos" class="btn btn-primary btn-sm">Ordenar Ahora</a>
+                <button class="mobile-menu-btn" aria-label="Abrir Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Tienda</a></li>
+                <li><a href="#como-ordenar">Cómo Ordenar</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero section-spacing">
+        <div class="hero-bg">
+            <img src="assets/hero.png" alt="Cookies by Jackie Hero Image" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="hero-title fade-in">
+                Un pedacito de cielo<br> 
+                <span class="text-accent">en cada mordisco</span>
+            </h1>
+            <p class="hero-subtitle fade-in delay-1">
+                Postres dulces, confortables y elaborados artesanalmente cada día. Dedicados a servirte lo mejor para tus momentos especiales.
+            </p>
+            <div class="hero-buttons fade-in delay-2">
+                <a href="#productos" class="btn btn-primary btn-lg">Ver Nuestro Menú <i class="fas fa-arrow-right"></i></a>
+                <a href="#como-ordenar" class="btn btn-outline btn-lg">Suscripciones</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="productos" class="products section-spacing bg-cream">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Nuestros Favoritos</h2>
+                <p class="section-desc">Delicias horneadas que han enamorado a todos nuestros clientes.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card fade-in">
+                    <div class="product-image-wrapper">
+                        <img src="assets/red_velvet.png" alt="Galletas Red Velvet" class="product-img">
+                        <div class="product-badge">Top Ventas</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Galletas Red Velvet Crinkle</h3>
+                        <p>Suaves por dentro, crujientes por fuera. El clásico sabor a pastel encapsulado en una galleta.</p>
+                        <div class="product-footer">
+                            <span class="price">$18.00 / docena</span>
+                            <button class="btn btn-primary btn-icon add-to-cart-btn" data-id="1" data-name="Galletas Red Velvet Crinkle" data-price="18.00" data-img="assets/red_velvet.png"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card fade-in delay-1">
+                    <div class="product-image-wrapper">
+                        <img src="assets/chocolate_chunk.png" alt="Galletas con Chispas de Chocolate" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gourmet Chocolate Chunk</h3>
+                        <p>Galletas gruesas con trozos gigantes de chocolate premium y un toque de sal marina.</p>
+                        <div class="product-footer">
+                            <span class="price">$20.00 / docena</span>
+                            <button class="btn btn-primary btn-icon add-to-cart-btn" data-id="2" data-name="Gourmet Chocolate Chunk" data-price="20.00" data-img="assets/chocolate_chunk.png"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card fade-in delay-2">
+                    <div class="product-image-wrapper">
+                        <img src="assets/cookie_cake.png" alt="Pastel de Galleta" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Tarta Gigante Cookie Cake</h3>
+                        <p>Doble capa de galleta suave con crema de mantequilla, perfecta para celebrar a lo grande.</p>
+                        <div class="product-footer">
+                            <span class="price">$35.00 / unidad</span>
+                            <button class="btn btn-primary btn-icon add-to-cart-btn" data-id="3" data-name="Tarta Gigante Cookie Cake" data-price="35.00" data-img="assets/cookie_cake.png"><i class="fas fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-xl fade-in">
+                <a href="#" class="btn btn-outline btn-lg">Ver Todo el Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works & FAQ -->
+    <section id="como-ordenar" class="faq-section section-spacing bg-white">
+        <div class="container dual-layout">
+            <div class="faq-content fade-in">
+                <h2 class="section-title">¿Cómo Ordenar?</h2>
+                <p class="section-desc mb-lg">Es muy sencillo disfrutar de nuestros postres. Sigue nuestros pasos o revisa las preguntas frecuentes que tienen nuestros clientes.</p>
+                
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-mouse-pointer"></i></div>
+                        <div class="step-text">
+                            <h4>Elige tus favoritos</h4>
+                            <p>Explora nuestro menú y selecciona los postres que desees compartir.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-calendar-alt"></i></div>
+                        <div class="step-text">
+                            <h4>Programa fecha y lugar</h4>
+                            <p>Preferiblemente con 3 días de antelación. ¡También tenemos opciones para entrega el mismo día!</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon"><i class="fas fa-gift"></i></div>
+                        <div class="step-text">
+                            <h4>Disfruta la magia</h4>
+                            <p>Recibe nuestro dulce paquete y una confirmación fotográfica (si es un regalo para alguien más).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-accordion fade-in delay-1">
+                <!-- Accordion Item 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Con cuánta anticipación debo hacer un pedido?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Generalmente, sugerimos realizar tu pedido con tres días de anticipación. Sin embargo, para productos seleccionados, puedes ordenar con 1-2 días o incluso para entrega el mismo día. ¡Revisa el menú para ver qué está disponible!</p>
+                    </div>
+                </div>
+                <!-- Accordion Item 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Qué información necesito para ordenar?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Solo necesitamos: Tu nombre, número y correo; los datos del destinatario (si aplica); y la fecha y hora de entrega.</p>
+                    </div>
+                </div>
+                <!-- Accordion Item 3 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Ofrecen opciones veganas o sin gluten?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Por el momento no contamos con opciones veganas o libres de gluten, pero estamos trabajando con amor para incluirlas en el futuro.</p>
+                    </div>
+                </div>
+                <!-- Accordion Item 4 -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        ¿Cuentan con cajas surtidas o bundles?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>¡Por supuesto! Nuestras cajas surtidas son la opción preferida para regalar. Ofrecemos combos de galletas, brownies y tartas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about section-spacing bg-cream">
+        <div class="container dual-layout reverse-mobile">
+            <div class="about-image fade-in">
+                <!-- A soft decorative placeholder, could just be a solid color block forming a shape -->
+                <div class="image-placeholder red-velvet-blob">
+                    <h2 class="title-signature">Con Amor, Jackie</h2>
+                </div>
+            </div>
+            <div class="about-content fade-in delay-1">
+                <h2 class="section-title">Nuestra Historia</h2>
+                <h4 class="subtitle mb-md">Elaborado artesanalmente desde el primer día</h4>
+                <p>Cookies by Jackie se ha convertido en la pastelería preferida gracias a nuestros postres caseros recién horneados. Nuestra misión es permitir a los clientes demostrar su amor a amigos y familiares a través de productos horneados de altísima calidad y pasteles únicos.</p>
+                <p>Todos los días, nuestra pastelería abre sus puertas para mantener la tradición de utilizar ingredientes premium siguiendo recetas familiares. Nuestro objetivo final es producir los postres más frescos y sabrosos, que hagan sentir a nuestros clientes como en casa.</p>
+                <a href="#contacto" class="btn btn-outline btn-lg mt-md">Conoce Más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section-spacing bg-primary pattern-bg">
+        <div class="container text-center fade-in">
+            <h2 class="section-title text-white">¡No te pierdas de nada!</h2>
+            <p class="section-desc text-white mb-lg">Suscríbete a nuestro boletín para recibir ofertas especiales, nuevos postres y noticias dulces.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit" class="btn btn-secondary btn-lg">¡Suscribirme!</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-cookies">COOKIES</span>
+                    <span class="logo-by">by Jackie</span>
+                </a>
+                <p>Pastelería premium donde el sabor familiar se encuentra con la más alta calidad.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Comprar Ahora</a></li>
+                    <li><a href="#como-ordenar">Suscripciones</a></li>
+                    <li><a href="#nosotros">Nuestra Historia</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Avenida Dulce, Ciudad Pastel</p>
+                <p><i class="fas fa-phone-alt"></i> +1 845-123-4567</p>
+                <p><i class="fas fa-envelope"></i> hola@cookiesbyjackie.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Cookies by Jackie. Todos los derechos reservados.</p>
+            <div class="footer-legal">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar & Overlay -->
+    <div id="cart-overlay" class="cart-overlay"></div>
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-bag"></i> Tu Pedido</h3>
+            <button id="cart-close-btn" class="close-cart-btn"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Items injected by JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total-row">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal" class="price">$0.00</span>
+            </div>
+            <button id="checkout-btn" class="btn btn-primary checkout-btn" style="width: 100%;">Proceder al Pago</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
