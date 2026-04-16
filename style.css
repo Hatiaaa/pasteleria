@@ -208,17 +208,17 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 251, 242, 0.85);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     transition: var(--transition);
     padding: 1rem 0;
 }
 
 .glass-nav.scrolled {
     padding: 0.5rem 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 251, 242, 0.98);
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
 
@@ -245,10 +245,9 @@ h1, h2, h3, h4, h5, h6 {
 .logo-by {
     font-family: var(--font-signature);
     font-size: 1.25rem;
-    color: var(--color-secondary);
+    color: var(--color-text-dark);
     margin-top: -5px;
     padding-left: 10px;
-    text-shadow: 1px 1.5px 3px rgba(0, 0, 0, 0.4);
 }
 
 .desktop-nav ul {
