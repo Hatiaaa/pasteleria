@@ -628,6 +628,9 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
     display: block;
     mix-blend-mode: multiply;
+    /* Softly fade the edges so the background merges flawlessly without square borders */
+    -webkit-mask-image: radial-gradient(circle, black 55%, transparent 75%);
+    mask-image: radial-gradient(circle, black 55%, transparent 75%);
 }
 
 /* Hotspots */
