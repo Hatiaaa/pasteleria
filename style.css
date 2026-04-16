@@ -612,17 +612,51 @@ h1, h2, h3, h4, h5, h6 {
 /*=============================================
 =            NEW SECTIONS (BENTO, MASONRY, ETC) =
 =============================================*/
+.ingredients-highlight {
+    position: relative;
+    background: var(--color-cream);
+    overflow: hidden;
+}
+.ingredients-highlight::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    background: var(--color-secondary); /* Butter gold */
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+    z-index: 0;
+}
+.ingredients-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    right: -50px;
+    width: 500px;
+    height: 500px;
+    background: var(--color-primary); /* Red velvet */
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.15;
+    z-index: 0;
+}
+
 .ingredients-glass-bento {
+    position: relative;
+    z-index: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 3rem;
+    background: rgba(255, 255, 255, 0.35); /* More transparent to see the blur */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: var(--border-radius-lg);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    padding: 3rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05), inset 0 0 0 1px rgba(255,255,255,0.2);
 }
 .ingredient-box {
     text-align: center;
