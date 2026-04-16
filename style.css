@@ -612,65 +612,91 @@ h1, h2, h3, h4, h5, h6 {
 /*=============================================
 =            NEW SECTIONS (BENTO, MASONRY, ETC) =
 =============================================*/
-.ingredients-highlight {
+.anatomy-section {
     position: relative;
-    background: var(--color-cream);
     overflow: hidden;
 }
-.ingredients-highlight::before {
-    content: '';
-    position: absolute;
-    top: -100px;
-    left: -100px;
-    width: 400px;
-    height: 400px;
-    background: var(--color-secondary); /* Butter gold */
+.anatomy-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
     border-radius: 50%;
-    filter: blur(80px);
-    opacity: 0.5;
-    z-index: 0;
+    margin-top: 2rem;
 }
-.ingredients-highlight::after {
-    content: '';
-    position: absolute;
-    bottom: -150px;
-    right: -50px;
-    width: 500px;
-    height: 500px;
-    background: var(--color-primary); /* Red velvet */
-    border-radius: 50%;
-    filter: blur(100px);
-    opacity: 0.15;
-    z-index: 0;
+.anatomy-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    mix-blend-mode: multiply;
 }
 
-.ingredients-glass-bento {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    background: rgba(255, 255, 255, 0.35); /* More transparent to see the blur */
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: var(--border-radius-lg);
-    padding: 3rem;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.05), inset 0 0 0 1px rgba(255,255,255,0.2);
+/* Hotspots */
+.hotspot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
 }
-.ingredient-box {
-    text-align: center;
+.hotspot-dot {
+    width: 100%;
+    height: 100%;
+    background: var(--color-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(196, 24, 32, 0.7);
+    animation: pulse 2s infinite cubic-bezier(0.66, 0, 0, 1);
+    border: 3px solid white;
+}
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 20px rgba(196, 24, 32, 0);
+    }
+}
+
+.hotspot-tooltip {
+    position: absolute;
+    bottom: calc(100% + 15px);
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    width: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 1rem;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(196, 24, 32, 0.1);
+    pointer-events: none;
 }
-.ing-icon {
-    font-size: 2.5rem;
-    color: var(--color-secondary);
-    margin-bottom: 1rem;
+.hotspot-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.9) transparent transparent transparent;
 }
-.ingredient-box h4 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+.hotspot:hover .hotspot-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+.hotspot-tooltip h4 {
     color: var(--color-primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+.hotspot-tooltip p {
+    font-size: 0.85rem;
+    color: var(--color-text-dark);
+    margin: 0;
 }
 
 .masonry-grid {
