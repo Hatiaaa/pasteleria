@@ -1065,7 +1065,7 @@ h1, h2, h3, h4, h5, h6 {
  . e m p t y - c a r t - m s g   {   t e x t - a l i g n :   c e n t e r ;   c o l o r :   v a r ( - - c o l o r - t e x t - l i g h t ) ;   m a r g i n - t o p :   2 r e m ;   f o n t - s t y l e :   i t a l i c ;   }  
  
 /* WhatsApp Float */
-.whatsapp-float {
+.float-contact-btn {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -1083,7 +1083,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
     transition: all 0.3s ease;
 }
-.whatsapp-float:hover {
+.float-contact-btn:hover {
     transform: scale(1.1);
     background-color: #128C7E;
     color: white;
