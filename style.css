@@ -1082,9 +1082,24 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
     z-index: 1000;
     transition: all 0.3s ease;
+    animation: pulse-whatsapp 2s infinite;
 }
+
 .float-contact-btn:hover {
     transform: scale(1.1);
     background-color: #128C7E;
     color: white;
+    animation: none; /* Stops pulsating on hover */
+}
+
+@keyframes pulse-whatsapp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
