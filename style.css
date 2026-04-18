@@ -686,6 +686,9 @@ h1, h2, h3, h4, h5, h6 {
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.9) transparent transparent transparent;
 }
+.hotspot:hover {
+    z-index: 20;
+}
 .hotspot:hover .hotspot-tooltip {
     opacity: 1;
     visibility: visible;
